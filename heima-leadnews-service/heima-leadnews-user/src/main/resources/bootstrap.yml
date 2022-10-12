@@ -1,0 +1,22 @@
+server:
+  port: 51801
+spring:
+  application:
+    name: leadnews-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+logging:
+  level:
+    com.heima: debug
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR
+  pattern:
+    dateformat: HH:mm:ss:SSS
+

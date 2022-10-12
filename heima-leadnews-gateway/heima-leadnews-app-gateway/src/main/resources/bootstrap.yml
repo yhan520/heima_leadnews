@@ -1,0 +1,18 @@
+server:
+  port: 51601
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+  application:
+    name: leadnews-app-gateway
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR
